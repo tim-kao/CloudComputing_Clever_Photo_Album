@@ -22,53 +22,50 @@ Customer Service is a core service for a lot of businesses around the world, and
 
 
 ## Description ##
-#### 1) [S3](https://aws.amazon.com/s3/)
+#### 1) [S3](https://aws.amazon.com/s3/) - B1
 - Store the frontend files.
 - Generate SDK from AWS API Gateway and store it into js folder.
 - chat.js file needs modification.
 - Create CORS policy.
 
-#### 2) [API Gateway](https://aws.amazon.com/apigateway/)
+#### 2) [S3](https://aws.amazon.com/s3/) - B2
+- Store image files.
+- Trigger LF1.
+
+#### 3) [API Gateway](https://aws.amazon.com/apigateway/)
 - Create a new API by importing swagger API.
-- Set POST method and integrate Lambda function LF0 with it.
+- Set PUT method triggering Bucket B2.
+- Set GET method and integrate LF2.
 - Set OPTIONS method and its response method with HTTP status 200.
 - Enable CORS.
 - Deploy API.
 - Generate SDK for frontend.
 
-#### 3) [Lambda](https://aws.amazon.com/lambda/) - LF0
-- Receive messages from the frontend user.
-- Direct messages to Dining Chatbot in Lex.
+#### 4) [Lambda](https://aws.amazon.com/lambda/) - LF1
+- Get photo labels from AWS Rekognition
+- Insert photos' indices into elasticsearch
 
-#### 4) [Lex](https://aws.amazon.com/lex/)
-- Create a Dining Chatbot with three intents (GreetingIntent, DiningSuggestionsIntent, ThankYouIntent).
-- Set up user utterances and slots in each intents for interaction conversation. 
-- Integrate with Lambda function LF1.
-- Publish the chatbot.
+#### 5) [Lex](https://aws.amazon.com/lex/)
+- Retrieve objects from natural language.
+- Support at most two objects.
 
-#### 5) [Lambda](https://aws.amazon.com/lambda/) - LF1
-- Trigger to fulfill the recommendation by sending it to SQS for later processing after the conversation.
+#### 6) [Lambda](https://aws.amazon.com/lambda/) - LF2
+- Use Lex to get objects' names, put them into elasticsearch, then return the image path.
 
-#### 6) [Simple Queue Servive](https://console.aws.amazon.com/sqs/v2/home)
-- FIFO type.
+#### 7) [Rekognition](https://console.aws.amazon.com/Rekognition)
+- Standard application with confidence level 90.
 
-#### 7) [ElasticSearch](https://console.aws.amazon.com/es/home)
+#### 8) [ElasticSearch](https://console.aws.amazon.com/es/home)
 - 7000+ Yelp API cuisines data.
 - Store restaurants Key ID and cuisine types.
 
-#### 8) [DynamoDB](https://console.aws.amazon.com/dynamodb/home?region=us-east-1)
-- 7000+ Yelp API cuisines data.
-- Key: restaurant ID and insertedAtTimestamp.
-- Data columns: Business ID, Name, Address, Coordinates, Number of Reviews, Rating, Zip Code, and Phone number.
+#### 9) [webkitSpeechRecognition]
+- Converts speech to texts.
 
-#### 9) [Lambda](https://aws.amazon.com/lambda/) - LF2
-- Take requests from SQS.
-- Retrieve key message and get key id by elasticsearch.
-- Use key as an index to load data from dynamodB.
-- Randomly select recommended restaurants.
-- Organize the data into a message and deliver it to users by both e-mail and phone.
+#### 10) [CodeBuild](https://aws.amazon.com/CodeBuild/)
+- Build lambda Code in pipeline.
 
-#### 10) [Cloudformation](https://aws.amazon.com/Cloudformation/) - CL
+#### 11) [Cloudformation](https://aws.amazon.com/Cloudformation/) - CL
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cloudformation.png)
 Quick/Automatic deployment by cloudformation
 
