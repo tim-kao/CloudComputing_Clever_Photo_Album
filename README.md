@@ -62,7 +62,7 @@ Customer Service is a core service for a lot of businesses around the world, and
 #### 8) [ElasticSearch](https://console.aws.amazon.com/es/home)
 - Store photos with labels.
 
-#### 9) [webkitSpeechRecognition]
+#### 9) webkitSpeechRecognition
 - Converts speech to texts.
 
 #### 10) [CodeBuild](https://aws.amazon.com/CodeBuild/)
