@@ -5,10 +5,10 @@ Customer Service is a core service for a lot of businesses around the world and 
 
 ## Demo ##
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/cat_and_dog.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/upload.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/cat_and_dog_new.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/assign_label_monster.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/monster.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/upload.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cat_and_dog_new.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/assign_label_monster.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/assign_label_monster.png)
 
 ## Application (Language & Tools) ##
 1) Frontend: CSS, HTML, JavaScript
@@ -16,7 +16,7 @@ Customer Service is a core service for a lot of businesses around the world and 
 
 
 ## Architecture ##
-![image](https://github.com/jyincheng/Dining-Recommendation-Chatbot/blob/main/architecture.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/architecture.png)
 1) User -> Frontend (chat.html / AWS S3): user input "hello" to initiate the conversation
 2) Frontend -> API: send user's messages to API.
 3) API -> LF0: LF0 receive message from API.
@@ -71,10 +71,12 @@ Customer Service is a core service for a lot of businesses around the world and 
 - Randomly select recommended restaurants.
 - Organize the data into a message and deliver it to users by both e-mail and phone.
 
-
+#### 10) [Cloudformation](https://aws.amazon.com/Cloudformation/) - CL
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/cloudformation.png)
+Quick/Automatic deployment by cloudformation
 
 *AWS Region: US-east-1 (N. Virginia)
 
 
 ## Contributor ##
-#### [Yin Cheng](https://github.com/jyincheng)(UNI: cc4717), [Tim Kao](https://github.com/tim-kao?fbclid=IwAR0lWAvmWe03EtuderoHdKEpYYG8pnl2ca1bN1b5DBfEMP-wFv4kQupl-Jg) (UNI: sk4920)
+#### [Tim Kao](https://github.com/tim-kao?fbclid=IwAR0lWAvmWe03EtuderoHdKEpYYG8pnl2ca1bN1b5DBfEMP-wFv4kQupl-Jg) (UNI: sk4920)
