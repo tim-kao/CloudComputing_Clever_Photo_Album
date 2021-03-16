@@ -69,7 +69,7 @@ Customer Service is a core service for a lot of businesses around the world, and
 #### 10) [CodeBuild](https://aws.amazon.com/CodeBuild/)
 - Build lambda Code in pipeline.
 
-#### 11) [Cloudformation](https://aws.amazon.com/Cloudformation/) - CL
+#### 11) [Cloudformation](https://aws.amazon.com/Cloudformation/) 
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cloudformation.png)
 Quick/Automatic deployment by cloudformation
 
