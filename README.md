@@ -60,8 +60,7 @@ Customer Service is a core service for a lot of businesses around the world, and
 - Standard application with confidence level 90.
 
 #### 8) [ElasticSearch](https://console.aws.amazon.com/es/home)
-- 7000+ Yelp API cuisines data.
-- Store restaurants Key ID and cuisine types.
+- Store photos with labels.
 
 #### 9) [webkitSpeechRecognition]
 - Converts speech to texts.
