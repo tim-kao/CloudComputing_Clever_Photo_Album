@@ -1,7 +1,7 @@
 # CloudComputing_Clever_Photo_Album #
 
 ## Overview ##
-Customer Service is a core service for a lot of businesses around the world and it is getting disrupted at the moment by Natural Language Processing-powered applications. The [Clever_Photo_Albu](https://cloud-assignment1-bucket.s3.amazonaws.com/chat.html) is a serverless, microservice-driven web application that sends customers restaurant suggestions given a set of preferences that they provide the chatbot with through conversation. 
+Customer Service is a core service for a lot of businesses around the world, and it is getting disrupted at the moment by Natural Language Processing-powered applications. The [Clever_Photo_Album](https://cloud-computing-a2-b1.s3.amazonaws.com/index.html) is a serverless, micro service-driven web application that offers users an intelligent album. It not only allows users to upload their photos but search by natural language. Besides, this album supports customized labels assigned by users.
 
 ## Demo ##
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cat_and_dog.png)
@@ -12,16 +12,17 @@ Customer Service is a core service for a lot of businesses around the world and 
 
 ## Application (Language & Tools) ##
 1) Frontend: CSS, HTML, JavaScript
-2) Backend: AWS Serverless ([S3](https://aws.amazon.com/s3/), [Lambda](https://aws.amazon.com/lambda/), [API Gateway](https://aws.amazon.com/apigateway/), [Lex](https://aws.amazon.com/lex/), [SQS](https://aws.amazon.com/sqs/), [SNS](https://aws.amazon.com/sns/), [DynamoDB](https://aws.amazon.com/dynamodb/), [ElasticSearch](https://aws.amazon.com/es/)), Swagger API, PyThon
+2) Backend: AWS Serverless ([S3](https://aws.amazon.com/s3/), [Lambda](https://aws.amazon.com/lambda/), [API Gateway](https://aws.amazon.com/apigateway/), [Lex](https://aws.amazon.com/lex/), [SQS](https://aws.amazon.com/sqs/), [SNS](https://aws.amazon.com/sns/), [DynamoDB](https://aws.amazon.com/dynamodb/), [ElasticSearch](https://aws.amazon.com/es/)), [CodePipeline](https://aws.amazon.com/CodePipeline/)), [Cloudformation](https://aws.amazon.com/cloudformation/)), Swagger API, PyThon
 
 
 ## Architecture ##
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/architecture.png)
 1) User -> Frontend (chat.html / AWS S3): user input "hello" to initiate the conversation
 2) Frontend -> API: send user's messages to API.
-3) API -> LF0: LF0 receive message from API.
-4) LF0 -> Lex: direct user's message to Lex and start the conversation with the Dining Chatbot.
-5) Lex -> LF1: after the conversation, LF1 will be triggered to send recommendation to users via SQS.
+3) API -> 
+4) LF1 -> 
+5) LF2 -> 
+6) Lex -> Retrieve objects from natural language
 
 
 ## Description ##
