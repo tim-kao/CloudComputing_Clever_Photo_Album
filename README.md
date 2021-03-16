@@ -15,17 +15,21 @@ Customer Service is a core service for a lot of businesses around the world, and
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/architecture.png)
 1) User -> Frontend (chat.html / AWS S3): user input "hello" to initiate the conversation
 2) Frontend -> API: send user's messages to API.
-3) API -> 
-4) LF1 -> 
-5) LF2 -> 
+3) API -> Put images into B2 and get photo path by LF2
+4) LF1 -> Insert photos' indices
+5) LF2 -> Search photos
 6) Lex -> Retrieve objects from natural language
+7) Rekognition -> Return objects in images.
+8) webkitSpeechRecognition -> Speech to texts conversion.
+9) ES -> Search photo's indices
+10) CodeBuild -> Github pushes update lambda automatically.
+11) Cloudformation -> Deploy all facilities except Lex by one button.
 
 
 ## Description ##
 #### 1) [S3](https://aws.amazon.com/s3/) - B1
 - Store the frontend files.
 - Generate SDK from AWS API Gateway and store it into js folder.
-- chat.js file needs modification.
 - Create CORS policy.
 
 #### 2) [S3](https://aws.amazon.com/s3/) - B2
