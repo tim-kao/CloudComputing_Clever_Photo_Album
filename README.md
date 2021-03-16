@@ -72,7 +72,7 @@ Customer Service is a core service for a lot of businesses around the world and 
 - Organize the data into a message and deliver it to users by both e-mail and phone.
 
 #### 10) [Cloudformation](https://aws.amazon.com/Cloudformation/) - CL
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/cloudformation.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cloudformation.png)
 Quick/Automatic deployment by cloudformation
 
 *AWS Region: US-east-1 (N. Virginia)
