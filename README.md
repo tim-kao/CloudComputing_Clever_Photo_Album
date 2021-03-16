@@ -80,5 +80,5 @@ Quick/Automatic deployment by cloudformation
 
 
 ## Contributor ##
-#### [Tim Kao](https://github.com/tim-kao?fbclid=IwAR0lWAvmWe03EtuderoHdKEpYYG8pnl2ca1bN1b5DBfEMP-wFv4kQupl-Jg) (UNI: sk4920)
+#### [Tim Kao](https://github.com/tim-kao) (UNI: sk4920)
 #### [Yin Cheng](https://github.com/jyincheng)(UNI: cc4717)
