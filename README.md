@@ -8,7 +8,7 @@ Customer Service is a core service for a lot of businesses around the world, and
 
 ## Application (Language & Tools) ##
 1) Frontend: CSS, HTML, JavaScript
-2) Backend: AWS Serverless ([S3](https://aws.amazon.com/s3/), [Lambda](https://aws.amazon.com/lambda/), [API Gateway](https://aws.amazon.com/apigateway/), [Lex](https://aws.amazon.com/lex/), [SQS](https://aws.amazon.com/sqs/), [SNS](https://aws.amazon.com/sns/), [DynamoDB](https://aws.amazon.com/dynamodb/), [ElasticSearch](https://aws.amazon.com/es/), [Codebuild](https://docs.aws.amazon.com/codebuild/), [Cloudformation](https://aws.amazon.com/cloudformation/)), Swagger API, PyThon
+2) Backend: AWS Serverless ([S3](https://aws.amazon.com/s3/), [Lambda](https://aws.amazon.com/lambda/), [API Gateway](https://aws.amazon.com/apigateway/), [Lex](https://aws.amazon.com/lex/), webkitSpeechRecognition, [Rekognition](https://aws.amazon.com/rekognition/), [ElasticSearch](https://aws.amazon.com/es/), [Codebuild](https://docs.aws.amazon.com/codebuild/), [Cloudformation](https://aws.amazon.com/cloudformation/)), Swagger API, PyThon
 
 
 ## Architecture ##
@@ -52,7 +52,7 @@ Customer Service is a core service for a lot of businesses around the world, and
 #### 6) [Lambda](https://aws.amazon.com/lambda/) - LF2
 - Use Lex to get objects' names, put them into elasticsearch, then return the image path.
 
-#### 7) [Rekognition](https://console.aws.amazon.com/Rekognition)
+#### 7) [Rekognition](https://aws.amazon.com/rekognition/)
 - Standard application with confidence level 90.
 
 #### 8) [ElasticSearch](https://console.aws.amazon.com/es/home)
