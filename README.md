@@ -5,10 +5,6 @@ Customer Service is a core service for a lot of businesses around the world, and
 
 ## Demo ##
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cat_and_dog.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/upload.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cat_and_dog_new.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/assign_label_monster.png)
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/assign_label_monster.png)
 
 ## Application (Language & Tools) ##
 1) Frontend: CSS, HTML, JavaScript
