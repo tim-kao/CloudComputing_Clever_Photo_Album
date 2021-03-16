@@ -4,7 +4,7 @@
 Customer Service is a core service for a lot of businesses around the world and it is getting disrupted at the moment by Natural Language Processing-powered applications. The [Clever_Photo_Albu](https://cloud-assignment1-bucket.s3.amazonaws.com/chat.html) is a serverless, microservice-driven web application that sends customers restaurant suggestions given a set of preferences that they provide the chatbot with through conversation. 
 
 ## Demo ##
-![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/cat_and_dog.png)
+![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cat_and_dog.png)
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/upload.png)
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/cat_and_dog_new.png)
 ![image](https://github.com/tim-kao/CloudComputing_Clever_Photo_Album/blob/main/demo/assign_label_monster.png)
