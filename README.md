@@ -65,7 +65,7 @@ Customer Service is a core service for a lot of businesses around the world, and
 #### 9) webkitSpeechRecognition
 - Converts speech to texts.
 
-#### 10) [CodeBuild](https://aws.amazon.com/CodeBuild/)
+#### 10) [CodeBuild](https://aws.amazon.com/codebuild/)
 - Build lambda Code in pipeline.
 
 #### 11) [Cloudformation](https://aws.amazon.com/cloudformation/) 
