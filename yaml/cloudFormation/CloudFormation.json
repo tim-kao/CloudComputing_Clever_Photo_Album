@@ -8,8 +8,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 530,
-                    "y": 170
+                    "x": 540,
+                    "y": 160
                 },
                 "z": 1,
                 "embeds": [],
@@ -23,8 +23,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 390,
-                    "y": 170
+                    "x": 440,
+                    "y": 160
                 },
                 "z": 1,
                 "embeds": [],
@@ -50,8 +50,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 950,
-                    "y": 250
+                    "x": 960,
+                    "y": 240
                 },
                 "z": 1,
                 "embeds": []
@@ -62,8 +62,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 950,
-                    "y": 370
+                    "x": 960,
+                    "y": 380
                 },
                 "z": 1,
                 "embeds": []
@@ -74,8 +74,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 950,
-                    "y": 160
+                    "x": 960,
+                    "y": 110
                 },
                 "z": 1,
                 "embeds": []
@@ -86,8 +86,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 570,
-                    "y": 370
+                    "x": 580,
+                    "y": 380
                 },
                 "z": 1,
                 "embeds": [],
@@ -102,8 +102,8 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 1100,
-                    "y": 370
+                    "x": 1150,
+                    "y": 110
                 },
                 "z": 1,
                 "embeds": []
@@ -115,7 +115,7 @@
                 },
                 "position": {
                     "x": 840,
-                    "y": 300
+                    "y": 290
                 },
                 "z": 1,
                 "embeds": [],
@@ -129,13 +129,28 @@
                     "height": 60
                 },
                 "position": {
-                    "x": 740,
-                    "y": 370
+                    "x": 710,
+                    "y": 380
                 },
                 "z": 1,
                 "embeds": [],
                 "dependson": [
                     "556d64c9-580b-4539-b272-1255be87bf58"
+                ]
+            },
+            "1be636c5-114c-4ba2-9ed2-8d90ec280a7c": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 840,
+                    "y": 60
+                },
+                "z": 1,
+                "embeds": [],
+                "isassociatedwith": [
+                    "199b1e78-1d13-4eb9-be2a-f03fe32e8bae"
                 ]
             }
         }
@@ -243,7 +258,9 @@
                 "ManagedPolicyArns": [
                     "arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess",
                     "arn:aws:iam::aws:policy/AmazonLexFullAccess",
-                    "arn:aws:iam::aws:policy/service-role/AWSQuickSightElasticsearchPolicy"
+                    "arn:aws:iam::aws:policy/service-role/AWSQuickSightElasticsearchPolicy",
+                    "arn:aws:iam::aws:policy/AmazonRekognitionFullAccess",
+                    "arn:aws:iam::aws:policy/AmazonS3FullAccess"
                 ],
                 "AssumeRolePolicyDocument": {
                     "Version": "2012-10-17",
@@ -684,7 +701,12 @@
                 "Description": "Photo search",
                 "MemorySize": 128,
                 "Timeout": 30,
-                "Role": "arn:aws:iam::205407915465:role/CloudFormation_Lex_Lambda_APIGateway_Administrator",
+                "Role": {
+                    "Fn::GetAtt": [
+                        "LambdaExecutionRole",
+                        "Arn"
+                    ]
+                },
                 "Environment": {
                     "Variables": {
                         "REGION": "us-east-1"
@@ -734,6 +756,44 @@
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
                     "id": "1fca3fa8-9c86-43e6-908a-ad61163039e1"
+                }
+            }
+        },
+        "Permission": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+                "FunctionName": {
+                    "Fn::GetAtt": [
+                        "LF2",
+                        "Arn"
+                    ]
+                },
+                "Action": "lambda:InvokeFunction",
+                "Principal": "apigateway.amazonaws.com",
+                "SourceArn": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            "arn:aws:execute-api:",
+                            {
+                                "Ref": "AWS::Region"
+                            },
+                            ":",
+                            {
+                                "Ref": "AWS::AccountId"
+                            },
+                            ":",
+                            {
+                                "Ref": "AGRA1RWPX"
+                            },
+                            "/*/*/*"
+                        ]
+                    ]
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "1be636c5-114c-4ba2-9ed2-8d90ec280a7c"
                 }
             }
         }
